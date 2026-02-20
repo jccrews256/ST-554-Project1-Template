@@ -7,7 +7,8 @@ Please replace “Feedback giver #x” with a group member’s name below and ad
 - Cass Crews
   + Overall:
     - I recommend adjusting the text in the *Introduction* and *Read in Data and Data Cleaning* sections so that they flow as well as the Modeling section. 
-    - I think you should include a conclusion to summarize the notebook. 
+    - I think you should include a conclusion to summarize the notebook.
+    - I recommend adding some formatting to the title/by-line chunk to improve the aesthetic. 
   + Introduction:
     - The introduction feels choppy, as it begins with more technical details of the dataset before transitioning to the purpose of the notebook. I recommend summarizing the dataset in the introduction and moving the more technical aspects of the dataset to the data reading and cleaning section. 
   + Read in Data and Data Cleaning section:
