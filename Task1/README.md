@@ -22,7 +22,15 @@ Please replace “Feedback giver #x” with a group member’s name below and ad
     + When printing the minimum RMSE and corresponding c, it is unclear why you used such a complex line of code to find the minimum RMSE.  Why not use something much simpler and easier to interpret like `rmse_df.rmse.min()`? I think the code to find the corresponding value of c can also be simplified a great deal.
     + Astute observation about the optimal RMSE being very close to the sample standard deviation! As sample size gets large, `1/n` and `1/(n-1)` become indistinguishable.
     + I found it interesting that you actually created a grid of parameter options for grid search. When I've seen this done in the past, people normally just have 1D lists of parameters to consider and loop through those directly, instead of populating a grid and iterating through that. The grid isn't usually literally constructed. You can be more computationally efficient if you skip making a literal grid and simply create a list of tuples at the end of the inner `for` loop: `(parameter 1, parameter 2, result)`. That would also let you simplify coding later (no unraveling or using `.argmin()`.  (I don't think it's worth the effort to re-engineer your approach - just food for thought).
-    + Did you do anything to verify if the regressed parameters or check values were reasonable? A simple plot of CO_sensor vs. benzene_truth would go a long way, and a superimposed calibration curve would be even better. 
+    + Did you do anything to verify if the regressed parameters or check values were reasonable? A simple plot of CO_sensor vs. benzene_truth would go a long way, and a superimposed calibration curve would be even better.
+  + Gradient Descent
+    + Thorough description of your methodology (as appropriate for a complex problem like this)
+    + [Minor editorial comment] In the second paragraph of the markdown cell before you define your function, there's a stray comma after "utilizing"
+    + I just want to say... thank you for taking on the hardest task (by far)!
+    + After your `while` loop failed to converge in 200,000 iterations, your next markdown cell has an incomplete sentence in the second paragraph.
+    + Since there are so many hyperparameters to change in gradient descent, we could use grid search to find the best gradient descent model! This would be fairly straightforward using your pre-defined functions, but computation time could become excessive. Based on how much work you've already done, I don't think this is necessary. Just a fun convergence between the two parts of the project. The method used in the first part could be used to help optimize the second part!
+    + Great work. Again, thanks! 
+    
 
 
 - Feedback giver #2
