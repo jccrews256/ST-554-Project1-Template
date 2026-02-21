@@ -4,7 +4,7 @@ You can provide feedback to your group members in many different ways (live in a
 
 Please replace “Feedback giver #x” with a group member’s name below and add feedback as a bulleted list below. Note: There is a pencil icon on the top right of the README file (when you are viewing the README.md file) that allows you to edit.
 
-- Cass Crews
+- Cass Crews (feedback added 02/20/26)
   + Overall:
     - Your notebook flows well, and the descriptions of the summaries you have created are very good. With a few updates to your plots, you’ll have a very good EDA. 
     - I find it more natural to transition from numeric summaries to graphical summaries. This may be my personal preference, but I also find your numeric summaries to be a great analytical base to build your graphical summary sections on! 
