@@ -25,5 +25,37 @@ Please replace “Feedback giver #x” with a group member’s name below and ad
     + Did you do anything to verify if the regressed parameters or check values were reasonable? A simple plot of CO_sensor vs. benzene_truth would go a long way, and a superimposed calibration curve would be even better. 
 
 
-- Feedback giver #2
-  + item
+- Joy Zhou
+- Added 2/20/2026
+  + Overall
+    - The data cleaning step is very impressive.
+    - You did a nice job building both algorithms. Your steps are clearly explained, and both algorithms run successfully and produce results. All parameters used in the algorithms are well defined and clearly explained.
+    - Grid search and gradient descent give similar outputs, except prediction benzene concentration at CO readings of 946, 1075, and 1246
+	  - All algorithm functions are working correctly and efficiently, with clear accompanying narrative.
+ 	  - Nice summary and well writing for this task
+    - You might consider using a few bullet points to make the content more readable.
+  + Introduction
+    - Please check this sentence: 'In particular, we will explore two algorithms the fit our predictive models: grid search and gradient descent'. Maybe change the fit to that fit.
+    - For the last three sentences in this introduction section, you might consider using bullet points to make the sequence of steps easier to read and follow.
+  + Importing and Cleaning Data
+    - I really like how clearly you explained your variables and chose their names.
+    - I might consider adding `air_quality_df.describe()` in my task to illustrate how missing values are coded in the dataset.
+    - Your approach to handling missing values and constructing the `data_time` variable is appropriate and effective.
+    - Verifying the earliest and latest date‑time stamps and ensuring there were no duplicate date‑time entries were good steps to make sure the entire time range was accurately captured.
+    - You missed punctuation or a transition word in the sentence ‘carbon monoxide sensor readings were recorded each time benzene concentration was measured, and vice versa.
+  + Grid Search Algorithm
+     - You may need to revise this sentence to make it clear: 'That is, we will identify c such that we minimize the training RMSE'.
+     - Nice work for extracting the minimum RMSE and c value
+  + Grid Descent Algorithm
+     - Your explanation of the gradient descent steps is clear and easy to follow, and Your code is well structured and readable.
+     - Both algorithms identify nearly identical optimal values of c for benzene and CO_sensor, which is nice
+     - I am not sure what you intended to say in this comment 'Interestingly, the gradient descent result is inferior to the g'.
+     - The predictions of benzene concentration for CO readings of 946, 1075, and 1246 using gradient descent (‑23.42, ‑23.51, ‑23.64) differ substantially from those using grid search (6.02, 9.35, 14.48). Adding one or two sentences explaining why this occurred (e.g., convergence issues, step size, initialization) would strengthen the discussion.
+  + Conclusion
+    - Your conclusion is clear and captures the main lessons from comparing grid search and gradient descent. I like the fact that you emphasize how a simpler approach can sometimes perform better. 
+    - You might consider adding a brief discussion of potential reasons why gradient descent didn’t perform well (such as step size, convergence issues, or sensitivity to initialization) to give readers a fuller understanding of the results.
+
+
+
+
+
